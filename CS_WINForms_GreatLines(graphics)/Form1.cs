@@ -52,11 +52,6 @@ namespace CS_WINForms_GreatLines_graphics_
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            int x = panel1.Width / 2, 
-                y = panel1.Height / 2,
-                a = panel1.Width / 2,
-                b = panel1.Height / 2;
-
             Graphics g = panel1.CreateGraphics();
             DrawAxeses(g);
 
