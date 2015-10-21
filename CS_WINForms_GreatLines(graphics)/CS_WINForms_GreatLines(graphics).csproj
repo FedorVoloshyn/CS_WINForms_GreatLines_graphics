@@ -55,6 +55,7 @@
     <Compile Include="GraphicCardioid.cs" />
     <Compile Include="GraphicDecartLeaf.cs" />
     <Compile Include="GraphicDiocalCissoid.cs" />
+    <Compile Include="GraphicEmpty.cs" />
     <Compile Include="GraphicNicomedKonkhoid.cs" />
     <Compile Include="GraphicStrophoid.cs" />
     <Compile Include="IGraphic.cs" />

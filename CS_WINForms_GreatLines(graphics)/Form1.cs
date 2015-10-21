@@ -55,7 +55,7 @@ namespace CS_WINForms_GreatLines_graphics_
             Graphics g = panel1.CreateGraphics();
             DrawAxeses(g);
 
-            Context currentGraphic = new Context(new GraphicCardioid());
+            Context currentGraphic = new Context(new GraphicEmpty());
 
             switch(comboBox1.SelectedIndex)
             {
