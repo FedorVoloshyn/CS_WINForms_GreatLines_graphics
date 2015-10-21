@@ -16,16 +16,12 @@ namespace CS_WINForms_GreatLines_graphics_
                 a = panelWidth / 2,
                 b = panelHight / 2;
 
-            int timer = 1;
             for (double angle = 0; angle <= 3 * 3.1416; angle += 0.05) // Верзьера Аньези
             {
-            A:
                 Point currPoint = new Point();
                 currPoint.X = Convert.ToInt32(angle * 100.0);
                 double k = -a + 100.0 * angle;
                 currPoint.Y = Convert.ToInt32(b - 50.0 * (8.0 / (4.0 + k * k / 500.0)));
-                if (angle == 0 && --timer == 0)
-                    goto A;
                 currentGraphic.Add(currPoint);
             }
 

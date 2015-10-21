@@ -16,15 +16,11 @@ namespace CS_WINForms_GreatLines_graphics_
                 a = panelWidth / 2,
                 b = panelHight / 2;
 
-            int timer = 1;
             for (double angle = -3.1416 / 2; angle <= 3.1416 + 3.1416 / 2; angle += 0.04) // Конхоида Никомеда
             {
-            A:
                 Point currPoint = new Point();
                 currPoint.X = Convert.ToInt32(a + 100 * (0.6 * Math.Cos(angle)));
                 currPoint.Y = Convert.ToInt32(b + 100 * (0.6 * Math.Tan(angle) + 1.2 * Math.Sin(angle)));
-                if (angle == -3.1416 / 2 && --timer == 0)
-                    goto A;
                 currentGraphic.Add(currPoint);
             }
 

@@ -16,15 +16,11 @@ namespace CS_WINForms_GreatLines_graphics_
                 a = panelWidth / 2,
                 b = panelHight / 2;
 
-            int timer = 1;
             for (double angle = 0.01; angle <= 3.1416; angle += 0.05) // Циссоида Диокла
             {
-            A:
                 Point currPoint = new Point();
                 currPoint.X = Convert.ToInt32(a + 100 * 2 / (1 + Math.Tan(angle) * Math.Tan(angle)));
                 currPoint.Y = Convert.ToInt32(b + 100 * 2 / (Math.Tan(angle) * (1 + Math.Tan(angle) * Math.Tan(angle))));
-                if (angle == 0.01 && --timer == 0)
-                    goto A;
                 currentGraphic.Add(currPoint);
             }
 
