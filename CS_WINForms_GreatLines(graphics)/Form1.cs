@@ -53,8 +53,6 @@ namespace CS_WINForms_GreatLines_graphics_
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = panel1.CreateGraphics();
-            DrawAxeses(g);
-
             Context currentGraphic = new Context(new GraphicEmpty());
 
             switch(comboBox1.SelectedIndex)
@@ -82,6 +80,7 @@ namespace CS_WINForms_GreatLines_graphics_
             }
 
             DrawGraphic(currentGraphic, g);
+            DrawAxeses(g);
         }
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)

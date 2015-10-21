@@ -18,7 +18,6 @@ namespace CS_WINForms_GreatLines_graphics_
 
             for (double angle = -3.1416 / 4; angle <= 3.1416 - 3.1416 / 4; angle += 0.05) // Декартов лист
             {
-            A:
                 Point currPoint = new Point();
                 currPoint.X = Convert.ToInt32(a + 100 * 3 * Math.Tan(angle) / (1 + Math.Tan(angle) * Math.Tan(angle) * Math.Tan(angle)));
                 currPoint.Y = Convert.ToInt32(b + 100 * 3 * Math.Tan(angle) * Math.Tan(angle) / (1 + Math.Tan(angle) * Math.Tan(angle) * Math.Tan(angle)));
