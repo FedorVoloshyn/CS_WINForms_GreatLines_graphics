@@ -57,7 +57,7 @@
     <Compile Include="GraphicDiocalCissoid.cs" />
     <Compile Include="GraphicNicomedKonkhoid.cs" />
     <Compile Include="GraphicStrophoid.cs" />
-    <Compile Include="IStrategy.cs" />
+    <Compile Include="IGraphic.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
