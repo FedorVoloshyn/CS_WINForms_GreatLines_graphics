@@ -21,15 +21,11 @@ namespace CS_WINForms_GreatLines_graphics_
                 a = panelWidth / 2,
                 b = panelHight / 2;
 
-            int timer = 1;
             for (double angle = -3.1416 / 2; angle <= 3.1416 / 2; angle += 0.05) // Строфоида
             {
-            A:
                 Point currPoint = new Point();
                 currPoint.X = Convert.ToInt32(a + 100 * (Math.Tan(angle) * Math.Tan(angle) - 1) / (Math.Tan(angle) * Math.Tan(angle) + 1));
                 currPoint.Y = Convert.ToInt32(b + 100 * Math.Tan(angle) * ((Math.Tan(angle) * Math.Tan(angle) - 1) / (Math.Tan(angle) * Math.Tan(angle) + 1)));
-                if (angle == -3.1416 / 2 && --timer == 0)
-                    goto A;
                 currentGraphic.Add(currPoint);
             }
 

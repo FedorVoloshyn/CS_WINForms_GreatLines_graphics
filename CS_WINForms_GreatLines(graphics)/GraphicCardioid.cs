@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Threading;
 
 namespace CS_WINForms_GreatLines_graphics_
 {
@@ -23,7 +18,7 @@ namespace CS_WINForms_GreatLines_graphics_
 
             currentGraphic.Add(new Point(x, y));
             
-            for (double angle = 0; angle <= 2 * 3.1416; angle += 0.05) // Кардиоида
+            for (double angle = 0; angle <= 2 * 3.1416; angle += 0.12) // Кардиоида
             {
                 Point currPoint = new Point();
                 currPoint.X = Convert.ToInt32(a + 100 * (1 - Math.Cos(angle)) * Math.Cos(angle));

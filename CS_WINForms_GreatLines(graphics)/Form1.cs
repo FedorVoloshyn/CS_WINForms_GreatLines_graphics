@@ -19,7 +19,7 @@ namespace CS_WINForms_GreatLines_graphics_
         {
             InitializeComponent();
             axesPen = new Pen(Color.Black);
-            graphPen = new Pen(Color.Red);
+            graphPen = new Pen(Color.Blue);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -79,6 +79,7 @@ namespace CS_WINForms_GreatLines_graphics_
                     break;
             }
 
+            DrawAxeses(g);
             DrawGraphic(currentGraphic, g);
             DrawAxeses(g);
         }

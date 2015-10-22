@@ -135,7 +135,7 @@
             this.MaximumSize = new System.Drawing.Size(846, 567);
             this.MinimumSize = new System.Drawing.Size(846, 567);
             this.Name = "Form1";
-            this.Text = "Замечательные кривые";
+            this.Text = "Замечательные кривые.";
             this.ResumeLayout(false);
             this.PerformLayout();
 
